@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 
 const {
-  getMovies, createMovie, delMovie
+  getMovies, createMovie, delMovie,
 } = require('../controllers/movies');
 
 router.get('/', getMovies);
