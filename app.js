@@ -20,7 +20,7 @@ const {
 const userRoutes = require('./routes/users');
 const movieRoutes = require('./routes/movies');
 
-const { login, createUser } = require('./controllers/users');
+const { login, createUser, logOut } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 
 const allowedCors = [
@@ -101,6 +101,7 @@ app.post(
 
 app.use(auth);
 
+app.delete('/signout', logOut);
 app.use('/users', userRoutes);
 app.use('/movies', movieRoutes);
 

@@ -2,12 +2,10 @@ const router = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 
 const {
-  getUserMe, logOut, updateUser,
+  getUserMe, updateUser,
 } = require('../controllers/users');
 
 router.get('/me', getUserMe);
-
-router.delete('/me', logOut);
 
 router.patch(
   '/me',
