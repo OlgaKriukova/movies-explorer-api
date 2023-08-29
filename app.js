@@ -24,8 +24,8 @@ const { login, createUser, logOut } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 
 const allowedCors = [
-  'https://diplomaok.nomoredomains.xyz',
-  'http://diplomaok.nomoredomains.xyz',
+  'https://diplomaok.nomoreparties.co',
+  'http://diplomaok.nomoreparties.co',
   'localhost:3000',
   'http://localhost:3000',
 ];
